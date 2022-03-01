@@ -404,7 +404,7 @@ bool PluginCodeGenerator::GenerateSource(const google::protobuf::FileDescriptor 
   return true;
 }
 
-bool PluginCodeGenerator::Generate(const google::protobuf::FileDescriptor * file, const std::string & parameter, google::protobuf::compiler::GeneratorContext * generator_context, string * error) const
+bool PluginCodeGenerator::Generate(const google::protobuf::FileDescriptor * file, const std::string & parameter, google::protobuf::compiler::GeneratorContext * generator_context, std::string * error) const
 {
 #if 0
   const std::string exe_path = ra::process::GetCurrentProcessPath();
